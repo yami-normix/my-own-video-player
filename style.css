@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body{
+    background-color: #fcf75e;
+}
+h1 {
+    margin-top: 4px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.container {
+    margin-top: -60px;
+    width: 100%;
+    height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+.container video {
+    border: 4px solid purple;
+    border-radius: 4px;
+    height: 400px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+position: relative;
+}
+
+.progress-container {
+    width: 230px;
+    height: 8px;
+    background-color: lightgray;
+    margin-bottom: 1rem;
+    margin-top: 14px;
+
+}
+.progress-bar {
+    background-color: purple;
+    width: 0;
+    height: 100%;
+}
+.controls {
+margin-top: 10px;
+   width: 370px;
+   display: flex;
+   justify-content: center;
+}
+.controls button {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border: 2px solid purple;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.play img {
+    width: 30px;
+}
+.backward img {
+    width: 30px;
+}
+.forward img {
+    width: 30px;
+}
+#mute img {
+    width: 30px;
+    height: 30px;
+}
+.container-volume {
+
+    display: flex;
+    position: absolute;
+    top: 65%;
+    /* left: 45%; */
+    right: 45%;
+}
+.container-volume li {
+    margin-right: 10px;
+}
+.container-volume li button {
+    background-color: purple;
+}
+.container-volume li #volinc, #voldec{
+    width: 30px;
+    font-size: 3rem;
+}
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+  }
